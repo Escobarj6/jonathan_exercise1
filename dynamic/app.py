@@ -9,5 +9,5 @@ def greeting():
 @app.route('/fruits')
 def fruits():
     fruits = ['Apple', 'Banana', 'Orange', 'Pineapple', 'Strawberry']
-    index = random.randint(0, len(fruits))
+    index = random.randint(0, len(fruits)-1)
     return fruits[index]
