@@ -11,3 +11,7 @@ def fruits():
     fruits = ['Apple', 'Banana', 'Orange', 'Pineapple', 'Strawberry']
     index = random.randint(0, len(fruits)-1)
     return fruits[index]
+@app.route('/add/<num1>/<num2>')
+def addNums(num1, num2):
+    result = int(num1) + int(num2)
+    return str(result)
