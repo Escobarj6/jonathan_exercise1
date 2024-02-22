@@ -1,5 +1,5 @@
 import random
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
@@ -15,3 +15,6 @@ def fruits():
 def addNums(num1, num2):
     result = int(num1) + int(num2)
     return str(result)
+@app.route('/red')
+def red():
+    return render_template('red.html')

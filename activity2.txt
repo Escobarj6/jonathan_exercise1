@@ -1,0 +1,9 @@
+1. cp *.py proj2/
+2. cp *.py ../
+3. cp proj1/p1.txt proj2/p1_new.txt
+4. mkdir ../proj3
+   cp -r * ../proj3/
+5. nohup python3 p1.py &
+6. ps aux -(though i'm a huge fan of btop/htop)
+7.pkill -9 1234
+
